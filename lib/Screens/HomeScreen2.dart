@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'PlaceholderWidget.dart';
-
+import 'package:flutter_slide/Screens/demo_view.dart';
+import 'dart:async';
 class HomeScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,7 @@ class HomeScreen2 extends StatelessWidget {
   );
 
   get header => ListTile(
-    contentPadding: EdgeInsets.only(left: 20, right: 20, top: 20),
+    contentPadding: EdgeInsets.only(left: 20, right: 20, top: 50),
     title: Text(
       'Dashboard',
       style: TextStyle(color: Colors.white),
@@ -54,17 +55,27 @@ class HomeScreen2 extends StatelessWidget {
         mainAxisSpacing: 16,
         crossAxisCount: 2,
         childAspectRatio: .90,
-        children: List.generate(8, (_) {
+        children: List.generate(6, (_) {
           return Card(
             elevation: 2,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Center(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[FlutterLogo(), Text('data')],
-              ),
+            child: new InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                    builder: (context) => DemoView()),
+              },
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[FlutterLogo(), Text('data')],
+                ),
+            ),
+
+
             ),
           );
         }),
