@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'PlaceholderWidget.dart';
 import 'package:flutter_slide/Screens/demo_view.dart';
+import 'package:flutter_slide/Screens/product_overview.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'dart:async';
 class HomeScreen2 extends StatelessWidget {
   @override
@@ -9,7 +11,7 @@ class HomeScreen2 extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Expanded(
-            child: Container(color: Colors.deepPurple),
+            child: Container(color: Color(0xFF5fbdc9)),
             flex: 2,
           ),
           Expanded(
@@ -23,7 +25,7 @@ class HomeScreen2 extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             ),
             subtitle: Text(
-              '10 items',
+              '10 categories',
               style: TextStyle(color: Colors.blue),
             ),
             trailing: CircleAvatar(),
@@ -47,7 +49,7 @@ class HomeScreen2 extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                            builder: (context) => DemoView()
+                            builder: (context) => ProductOverview()
                             )
                         );
                       },

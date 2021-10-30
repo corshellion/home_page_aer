@@ -30,8 +30,6 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
   void initState() {
     super.initState();
 
-
-
     animationController = new AnimationController(
         vsync: this, duration: new Duration(seconds: 1));
     animation =
@@ -59,14 +57,14 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
 
-              Padding(padding: EdgeInsets.only(bottom: 30.0),child:new Image.asset('assets/powered_by.png',height: 25.0,fit: BoxFit.scaleDown,))
+              Padding(padding: EdgeInsets.only(bottom: 30.0),child:new Image.asset('assets/images/splash/powered_by.png',height: 25.0,fit: BoxFit.scaleDown,))
 
             ],),
           new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Image.asset(
-                'assets/devs.gif',
+                'assets/images/splash/devs.gif',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),

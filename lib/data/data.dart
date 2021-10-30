@@ -44,7 +44,7 @@ List<SliderModel> getSlides(){
   //1
   sliderModel.setDesc("Discover a Food Courner offering the best fast food near you");
   sliderModel.setTitle("Search......");
-  sliderModel.setImageAssetPath("assets/codeplayon.png");
+  sliderModel.setImageAssetPath("assets/images/splash/codeplayon.png");
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
@@ -52,7 +52,7 @@ List<SliderModel> getSlides(){
   //2
   sliderModel.setDesc("Our food plan is filled with delicious seasonal vegetables, whole grains, fast food , burgger , pizza etc.");
   sliderModel.setTitle("Order..... ");
-  sliderModel.setImageAssetPath("assets/codeplayon2.png");
+  sliderModel.setImageAssetPath("assets/images/splash/codeplayon2.png");
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
@@ -60,7 +60,7 @@ List<SliderModel> getSlides(){
   //3
   sliderModel.setDesc("Food delivery or pickup from local restaurants, Explore restaurants that deliver near you.");
   sliderModel.setTitle("Deliver........");
-  sliderModel.setImageAssetPath("assets/codeplayon3.png");
+  sliderModel.setImageAssetPath("assets/images/splash/codeplayon3.png");
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();

@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'data/data.dart';
 import 'Screens/HomeScreen2.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_slide/Screens/slider.dart';
 class Introduction extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -176,7 +176,7 @@ void _settingModalBottomSheet(BuildContext context) {
                             print(passwordController.text);
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => HomeScreen2()),
+                              MaterialPageRoute(builder: (context) => HomePage()),
                             );
                           },
                         )),
